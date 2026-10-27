@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.Reverse a string
+        let s = "Mango";
+        let reversed = " ";
+        for(let i= s.length-1 ; i >=0 ;i--){
+            reversed+=s[i];
+            console.log(s[i])
+        }
+        console.log(reversed);
+
+        // Check String is palindrome or not
+
+        let s1 = "madam";
+        let reversed1 ="";
+        for(let i = s.length-1 ; i>=0; i--){
+            reversed1 +=s1[i];
+        }
+        if(s1==reversed1){
+            console.log("string is palindrome")
+        }
+        else{
+            console.log("string is not palindrome");
+        }
+
+        // Largest number in an array
+        let a =[10, 20 , 30, 40 , 50];
+        let Largest= a[0];
+        for(let i2= 1; i2<a.length ;i2++){
+            if(a[i2] > Largest){
+                Largest = a[i2];
+            }
+        }
+        console.log("largest number is" +Largest);
+
+        // remove the first element from an array
+        let s4 = [12 , 13, 14, 15, 16];
+        s4.shift();
+        console.log(s4);
+    </script>
+</body>
+</html>
